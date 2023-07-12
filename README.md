@@ -38,6 +38,7 @@
     Tools <br>
 </div>
 <div align="center">
+    <img src="https://img.shields.io/badge/eclipseide-2C2255?style=for-the-badge&logo=eclipseide&logoColor=white">
     <img src="https://img.shields.io/badge/Visual Studio Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white" />
 </div>
 <br>
