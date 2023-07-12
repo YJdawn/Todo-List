@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<comment>Todo-sql.xml</comment>
+	
+	<entry key="insertTodo" >
+	INSERT INTO TODOLIST 
+	VALUES ( TODOLIST_NO_SEQ.NEXTVAL , ? , SYSDATE ,DEFAULT)
+	</entry>
+	
+	<entry key="allListDelete">
+	DELETE FROM TODOLIST
+	</entry>
+	
+	<entry key="deleteList">
+	DELETE FROM TODOLIST
+	WHERE TESTADDTODO =?
+	</entry>
+	
+	<entry key="selectAll">
+	SELECT * FROM TODOLIST
+	</entry>
+	
+	<entry key="checkList">
+	UPDATE TODOLIST SET
+	TESTCHECK = 'Y'
+	WHERE TESTADDTODO = ?
+	</entry>
+	
+	<entry key="unCheckList">
+	UPDATE TODOLIST SET
+	TESTCHECK = 'N'
+	WHERE TESTADDTODO = ?
+	</entry>
+	
+	<entry key="checkedDelete">
+	DELETE FROM TODOLIST
+	WHERE TESTCHECK = 'Y'
+	</entry>
+	
+	<entry key="checkcheck">
+	SELECT * FROM TODOLIST
+	WHERE TESTADDTODO = ?
+	AND TESTCHECK = 'Y'
+	</entry>
+</properties>
